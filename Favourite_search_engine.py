@@ -41,7 +41,7 @@ lbl = Label(window, text=' ', font=(16), fg='#fff', bg='#2F4F4F')
 lbl.grid(column=1, row=4)
 
 #надпись сколько баллов
-lbl = Label(window, text='Сколько баллов ', font=(16), fg='#fff', bg='#2F4F4F')
+lbl = Label(window, text='Сколько баллов из 10', font=(16), fg='#fff', bg='#2F4F4F')
 lbl.grid(column=1, row=5)
 
 #количество баллов
@@ -56,7 +56,7 @@ lbl.grid(column=1, row=6)
 #появляется надпись при клике, и это должно быть перед кнопкой
 def clicked():
     res = 'Моя любимая поисковая система - ' + combo.get() + ', \nпотому ' \
-        'что ' + txt.get() + '. Количество баллов, которые я бы ему дал - ' + spin.get() + '.'
+        'что ' + txt.get() + '. \nКоличество баллов, которые я бы ему дал - ' + spin.get() + '.'
     lbl.configure(text=res, font='16', fg='#fff', bg='#2F4F4F')
     lbl.grid(columnspan=1+2+3+4, row=10)
 
