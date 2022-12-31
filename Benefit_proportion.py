@@ -8,8 +8,9 @@ window.title('Пропорция выгоды')
 window.geometry('600x400')
 window['bg'] = '#2F4F4F'
 
-x = 10 # отступ по х
-y = 10 # отступ по у
+x = 10  # отступ по х
+y = 10  # отступ по у
+
 
 # вычисление пропорции выгоды
 def clicked():
@@ -23,7 +24,8 @@ def clicked():
         res = 'Второй товар выгоднее.'
     else:
         res = 'Без разницы.'
-    resume.config(text = res)
+    resume.config(text=res)
+
 
 # Заголовок
 lbl = Label(window, text='   Какой товар выгоднее?', font=16, fg='#fff', bg='#2F4F4F')
