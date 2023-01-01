@@ -11,7 +11,7 @@ def check():
 
 
 def priced():
-   # коэффициенты
+        # коэффициенты
     p = int(passengers.get())  # количество пассажиров
     c = int(cargo.get())  # масса груза в тоннах
     rub = 100_000  # рублей за единичный коэффициент
@@ -39,6 +39,7 @@ def priced():
     price = d * p * c * t * rub
     price2 = '{0:,}'.format(price).replace(',', ' ')
     resume2.config(text=price2)
+
 
 # окно
 window = Tk()
