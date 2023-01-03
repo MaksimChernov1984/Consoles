@@ -21,12 +21,20 @@ def priced():
         d = 1
     elif destination.get() == 'Марс':
         d = 2
-    elif destination.get() == 'Седна':
+    elif destination.get() == 'Церера':
+        d = 2.5
+    elif destination.get() == ('Ганимед' or 'Ио' or 'Калисто' or 'Европа'):
         d = 3
-    elif destination.get() == 'Ганимед':
+    elif destination.get() == ('Меркурий' or 'Венера' or 'Титан'):
         d = 4
-    elif destination.get() == 'Титан':
+    elif destination.get() == 'Титания':
         d = 5
+    elif destination.get() == 'Тритон':
+        d = 6
+    elif destination.get() == 'Плутон':
+        d = 7
+    elif destination.get() == 'Эрида':
+        d = 8
 
         # коэффициенты тарифа
     if tariff.get() == 'простой':
@@ -37,7 +45,10 @@ def priced():
         t = 3
 
     price = d * p * c * t * rub
-    price2 = '{0:,}'.format(price).replace(',', ' ')
+    if c <= 100:
+        price2 = '{0:,}'.format(price).replace(',', ' ')
+    else:
+        price2 = 'Слишком много груза.'
     resume2.config(text=price2)
 
 
@@ -65,7 +76,8 @@ lbl.configure(text='Куда летим?')
 lbl.grid(column=0, row=1, padx=x, pady=y)
 
 destination = Combobox(window, width=11)
-destination['values'] = ('(выберите)', 'Луна', 'Марс', 'Седна', 'Ганимед', 'Титан')
+destination['values'] = ('(выберите)', 'Луна', 'Меркурий', 'Венера', 'Марс', 'Церера',
+                         'Ганимед', 'Ио', 'Калисто', 'Европа', 'Титан', 'Титания', 'Тритон', 'Плутон', 'Эрида')
 destination.current(0)
 destination.grid(column=1, row=1, padx=x, pady=y)
 
@@ -81,7 +93,7 @@ passengers.grid(column=1, row=2, padx=x, pady=y)
 
 # количество тонн груза
 lbl = Label(window, font=16, fg=f, bg=b)
-lbl.configure(text='Сколько тонн груза?')
+lbl.configure(text='Сколько тонн груза? (максимум 100)')
 lbl.grid(column=0, row=3, padx=x, pady=y)
 
 cargo = Entry(window, width=11)
