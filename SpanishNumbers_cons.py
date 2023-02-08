@@ -1,168 +1,24 @@
-x = int(input("Напишите любую цифру, а я напишу её на испанском  "))
-if(x) == 1:
-    x = "Uno"
-elif(x) == 2:
-    x = "Dos"
-elif(x) == 3:
-    x = "Tres"
-elif(x) == 4:
-    x = "Quatro"
-elif(x) == 5:
-    x = "Cinco"
-elif(x) == 6:
-    x = "Seis"
-elif(x) == 7:
-    x = "Siete"
-elif(x) == 8:
-    x = "Ocho"
-elif(x) == 9:
-    x = "Nueve"
-else:
-    x = "Cero"
-print(x)
-print()
-
-x = int(input("А ещё?  "))
-if(x) == 1:
-    x = "Uno"
-elif(x) == 2:
-    x = "Dos"
-elif(x) == 3:
-    x = "Tres"
-elif(x) == 4:
-    x = "Quatro"
-elif(x) == 5:
-    x = "Cinco"
-elif(x) == 6:
-    x = "Seis"
-elif(x) == 7:
-    x = "Siete"
-elif(x) == 8:
-    x = "Ocho"
-elif(x) == 9:
-    x = "Nueve"
-else:
-    x = "Cero"
-print(x)
-print()
-
-x = int(input("Ещё!  "))
-if(x) == 1:
-    x = "Uno"
-elif(x) == 2:
-    x = "Dos"
-elif(x) == 3:
-    x = "Tres"
-elif(x) == 4:
-    x = "Quatro"
-elif(x) == 5:
-    x = "Cinco"
-elif(x) == 6:
-    x = "Seis"
-elif(x) == 7:
-    x = "Siete"
-elif(x) == 8:
-    x = "Ocho"
-elif(x) == 9:
-    x = "Nueve"
-else:
-    x = "Cero"
-print(x)
-print()
-
-x = int(input("Мне понравилось, хочу ещё цифру!  "))
-if(x) == 1:
-    x = "Uno"
-elif(x) == 2:
-    x = "Dos"
-elif(x) == 3:
-    x = "Tres"
-elif(x) == 4:
-    x = "Quatro"
-elif(x) == 5:
-    x = "Cinco"
-elif(x) == 6:
-    x = "Seis"
-elif(x) == 7:
-    x = "Siete"
-elif(x) == 8:
-    x = "Ocho"
-elif(x) == 9:
-    x = "Nueve"
-else:
-    x = "Cero"
-print(x)
-print()
-
-x = int(input("Ещё одну.  "))
-if(x) == 1:
-    x = "Uno"
-elif(x) == 2:
-    x = "Dos"
-elif(x) == 3:
-    x = "Tres"
-elif(x) == 4:
-    x = "Quatro"
-elif(x) == 5:
-    x = "Cinco"
-elif(x) == 6:
-    x = "Seis"
-elif(x) == 7:
-    x = "Siete"
-elif(x) == 8:
-    x = "Ocho"
-elif(x) == 9:
-    x = "Nueve"
-else:
-    x = "Cero"
-print(x)
-print()
-
-x = int(input("И ещё разочек.  "))
-if(x) == 1:
-    x = "Uno"
-elif(x) == 2:
-    x = "Dos"
-elif(x) == 3:
-    x = "Tres"
-elif(x) == 4:
-    x = "Quatro"
-elif(x) == 5:
-    x = "Cinco"
-elif(x) == 6:
-    x = "Seis"
-elif(x) == 7:
-    x = "Siete"
-elif(x) == 8:
-    x = "Ocho"
-elif(x) == 9:
-    x = "Nueve"
-else:
-    x = "Cero"
-print(x)
-print()
-
-x = int(input("Теперь точно последний раз, честно.  "))
-if(x) == 1:
-    x = "Uno"
-elif(x) == 2:
-    x = "Dos"
-elif(x) == 3:
-    x = "Tres"
-elif(x) == 4:
-    x = "Quatro"
-elif(x) == 5:
-    x = "Cinco"
-elif(x) == 6:
-    x = "Seis"
-elif(x) == 7:
-    x = "Siete"
-elif(x) == 8:
-    x = "Ocho"
-elif(x) == 9:
-    x = "Nueve"
-else:
-    x = "Cero"
-print(x)
-input()
-
+x = int(input("Напишите любую цифру, а я напишу её на испанском.  "))
+while x < 10:
+    if x == 1:
+        y = "Uno"
+    elif x == 2:
+        y = "Dos"
+    elif x == 3:
+        y = "Tres"
+    elif x == 4:
+        y = "Quatro"
+    elif x == 5:
+        y = "Cinco"
+    elif x == 6:
+        y = "Seis"
+    elif x == 7:
+        y = "Siete"
+    elif x == 8:
+        y = "Ocho"
+    elif x == 9:
+        y = "Nueve"
+    else:
+        y = "Cero"
+    print(y)
+    x = int(input("А ещё!?  "))
