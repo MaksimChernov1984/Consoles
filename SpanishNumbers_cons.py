@@ -1,14 +1,7 @@
 x = input("Напишите любую цифру, а я напишу её на испанском.  ")
-d = {'1': 'Uno', 
-'2': 'Dos', 
-'3': 'Tres', 
-'4': 'Quatro', 
-'5': 'Cinco', 
-'6': 'Seis', 
-'7': 'Siete', 
-'8': 'Ocho', 
-'9': 'Nueve', 
-'0':'Cero'}
+d = {'1': 'Uno', '2': 'Dos', '3': 'Tres', '4': 'Quatro', '5': 'Cinco', '6': 'Seis', '7': 'Siete', '8': 'Ocho', '9': 'Nueve', '0':'Cero'}
+plus = ['А ещё.  ', 'Ещё раз хочу.  ', 'Продолжим?  ', 'Давай ещё.  ', 'Пирожков поем. Ещеё давай.']
 while len(x)>0:
     print(d[x])
-    x = input("А ещё!?  ")
+    for i in plus:
+    	x = input(i)
